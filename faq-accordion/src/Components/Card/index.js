@@ -10,6 +10,7 @@ const Card = (props) => (
             </header>
             <div className="Card-accordion-container">
                 <Accordion header= 'Hello' text= 'World!'/>
+                <Accordion header= 'Accordion 2' text= 'This is example text!'/>
             </div>
         </section>
 

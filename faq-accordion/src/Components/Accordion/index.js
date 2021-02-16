@@ -1,22 +1,22 @@
 import {useState} from 'react';
-import { ReactComponent as Image } from '../../images/icon-arrow-down.svg';
+import { ReactComponent as Icon } from '../../images/icon-arrow-down.svg';
+import './styles.css';
 
 const Accordion = (props) => {
     const [state, setState] = useState({ active: false, });
     const handleClick = () => setState({active: !state.active});
-    const text = <p>{props.text}</p>;
+    const text = <p className="Accordion-body--text">{props.text}</p>;
     return (
         <div className="Accordion">
-            <header onClick={handleClick}>
-                <h1>
+            <header className="Accordion-header" onClick={handleClick}>
+                <h1 className={"Accordion-header--text" + (state.active ? ' header-text--active' : '')}>
                     {props.header}
                 </h1>
                 <div className="Accordion-icon-container">
-                    <Image/>
+                    <Icon className={state.active && "rotate"}/>
                 </div>
             </header>
             { state.active && text }
-
         </div>
     )
 }

@@ -1,0 +1,34 @@
+.Accordion {
+    border-bottom: 1px solid lightgray;
+}
+
+.Accordion-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.Accordion-header--text {
+    font-size: 2.2rem;
+    color: gray;
+    font-weight: lighter;
+}
+
+.Accordion-body--text {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.Accordion-icon-container {
+    padding: 1rem;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.header-text--active {
+    color: black;
+    font-weight: bold;
+}
