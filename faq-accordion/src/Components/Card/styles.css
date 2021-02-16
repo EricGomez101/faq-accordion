@@ -1,0 +1,20 @@
+.Card{
+    height: 70%;
+    max-height: 50rem;
+    width: 70%;
+    max-width: 100rem;
+    border-radius: 4rem;
+    padding: 2rem;
+    background: #ffff;
+    display: flex;
+}
+
+.Card-content-container {
+    flex-grow: 1;
+    padding: 3rem 4rem;
+}
+
+.Card-content-container--header {
+    font-size: 4rem;
+}
+
