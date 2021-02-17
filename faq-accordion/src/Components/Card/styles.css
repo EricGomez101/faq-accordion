@@ -8,6 +8,7 @@
     background: #ffff;
     display: flex;
     overflow-y: auto;
+    box-shadow: #7363E7;
 }
 
 .Card-content-container {

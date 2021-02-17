@@ -1,5 +1,5 @@
 import "./styles.css";
-import Accordion from '../Accordion';
+import AccordionContainer from '../AccordionHOF';
 
 const Card = (props) => (
     <div className="Card">
@@ -8,12 +8,8 @@ const Card = (props) => (
             <header>
                 <h1 className="Card-content-container--header">FAQ</h1>
             </header>
-            <div className="Card-accordion-container">
-                <Accordion header= 'Hello' text= 'World!'/>
-                <Accordion header= 'Accordion 2' text= 'This is example text!'/>
-            </div>
+                <AccordionContainer/>
         </section>
-
     </div>
 )
 
