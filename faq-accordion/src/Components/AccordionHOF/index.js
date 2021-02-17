@@ -12,7 +12,7 @@ const faqs = [
 
 const AccordionContainer = () => {
     const [state, updateState] = useState({faqs});
-    const handleClick = (e, id) => {
+    const handleClick = (_, id) => {
         const faqs = state.faqs.map(faq => {
             if (faq.id === id) {
                 faq.active = !faq.active;
@@ -23,11 +23,10 @@ const AccordionContainer = () => {
         });
         updateState({faqs});
     };
+    const updatedFaqs = state.faqs.map(faq => <Accordion id={faq.id} header={faq.header} text={faq.text} active={faq.active} handleClick={handleClick}/>);
     return (
         <div className="Card-accordion-container">
-            {
-                state.faqs.map(faq => <Accordion id={faq.id} header={faq.header} text={faq.text} active={faq.active} handleClick={handleClick}/>)
-            }
+            { updatedFaqs }
         </div>
     )
 }
