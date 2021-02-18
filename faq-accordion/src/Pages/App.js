@@ -4,7 +4,7 @@ import Card from '../Components/Card';
 function App() {
   return (
     <main className="App">
-      <Card/>
+        <Card/>
     </main>
   );
 }

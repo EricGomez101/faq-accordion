@@ -13,7 +13,7 @@ const faqs = [
 
 const AccordionContainer = () => {
     const [state, updateState] = useState({faqs});
-    const handleClick = (_, id) => {
+    const handleClick = (id) => {
         const faqs = state.faqs.map(faq => {
             if (faq.id === id) {
                 faq.active = !faq.active;

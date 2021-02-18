@@ -1,26 +1,36 @@
 .Card {
-    height: 50%;
-    max-height: 40rem;
-    width: 70%;
-    max-width: 80rem;
+    height: 45rem;
+    width: 80rem;
     border-radius: 2rem;
-    padding: 2rem;
     background: #ffff;
     display: flex;
-    overflow: hidden;
     box-shadow: 0.5rem 1.6rem 2rem #3B3376;
+    position: relative;
 }
 
 .Card-content-container {
     width: 50%;
-    padding: 1rem 2rem;
-    overflow: scroll;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .Card-content-container--header {
     font-size: 3.6rem;
+}
+
+.Card-icon {
+    position: absolute;
+    top: 10%;
+    left: -8rem;
+}
+.Box-icon {
+    position: absolute;
+    top: 40%;
+    left: -10rem;
+    z-index: 1;
 }
 
 @media(max-width: 600px) {
@@ -35,8 +45,11 @@
         width: auto;
         padding: 2rem 1rem;
     }
+    .Card-content-container:nth-child(1) {
+        height: 25%;
+    }
     .Card-content-container:nth-child(2) {
-        justify-self: end;
+        margin-top: auto;
     }
     .Card-content-container--header {
         text-align: center;

@@ -5,7 +5,7 @@ const Accordion = (props) => {
     const text = <p className="Accordion-body--text">{props.text}</p>;
     return (
         <div className="Accordion">
-            <header className="Accordion-header" onClick={(e) => props.handleClick(e, props.id)}>
+            <header className="Accordion-header" onClick={(e) => props.handleClick(props.id)}>
                 <h1 className={"Accordion-header--text" + (props.active ? " header-text--active" : "")}>
                     {props.header}
                 </h1>

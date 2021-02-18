@@ -1,9 +1,14 @@
+import { ReactComponent as DesktopIcon } from '../../images/illustration-woman-online-desktop.svg';
+import { ReactComponent as BoxIcon } from '../../images/illustration-box-desktop.svg';
 import "./styles.css";
 import AccordionContainer from '../AccordionContainer';
 
 const Card = (props) => (
     <div className="Card">
-        <section className="Card-content-container"></section>
+        <BoxIcon className="Box-icon"/>
+        <section className="Card-content-container">
+            <DesktopIcon className="Card-icon"/>
+        </section>
         <section className="Card-content-container">
             <header>
                 <h1 className="Card-content-container--header">FAQ</h1>
