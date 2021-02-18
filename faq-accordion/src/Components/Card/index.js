@@ -1,5 +1,5 @@
 import "./styles.css";
-import AccordionContainer from '../AccordionHOF';
+import AccordionContainer from '../AccordionContainer';
 
 const Card = (props) => (
     <div className="Card">

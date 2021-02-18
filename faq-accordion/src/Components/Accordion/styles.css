@@ -10,9 +10,13 @@
 }
 
 .Accordion-header--text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: gray;
     font-weight: lighter;
+}
+
+.Accordion-header--text:not(.header-text--active):hover {
+    color: orange;
 }
 
 .Accordion-body--text {
@@ -31,4 +35,10 @@
 .header-text--active {
     color: black;
     font-weight: bold;
+}
+
+@media(max-width: 600px) {
+    .Accordion-header--text {
+        font-size: 1.6rem;
+    }
 }

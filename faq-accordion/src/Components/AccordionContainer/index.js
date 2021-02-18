@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Accordion from "../Accordion";
+import "./styles.css";
 
 const faqs = [
     { id: 1, header: 'How many team members can i invite?', text: 'Example text!', active: false },
@@ -25,7 +26,7 @@ const AccordionContainer = () => {
     };
     const updatedFaqs = state.faqs.map(faq => <Accordion id={faq.id} header={faq.header} text={faq.text} active={faq.active} handleClick={handleClick}/>);
     return (
-        <div className="Card-accordion-container">
+        <div className="Accordion-container">
             { updatedFaqs }
         </div>
     )

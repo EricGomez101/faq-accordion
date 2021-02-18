@@ -1,22 +1,44 @@
-.Card{
-    height: 70%;
-    max-height: 50rem;
+.Card {
+    height: 50%;
+    max-height: 40rem;
     width: 70%;
-    max-width: 100rem;
-    border-radius: 4rem;
+    max-width: 80rem;
+    border-radius: 2rem;
     padding: 2rem;
     background: #ffff;
     display: flex;
-    overflow-y: auto;
-    box-shadow: #7363E7;
+    overflow: hidden;
+    box-shadow: 0.5rem 1.6rem 2rem #3B3376;
 }
 
 .Card-content-container {
     width: 50%;
-    padding: 3rem 4rem;
+    padding: 1rem 2rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .Card-content-container--header {
-    font-size: 4rem;
+    font-size: 3.6rem;
 }
 
+@media(max-width: 600px) {
+    .Card {
+        height: 70%;
+        width: 70%;
+        flex-direction: column;
+        margin-top: 5rem;
+        max-height: 70rem;
+    }
+    .Card-content-container {
+        width: auto;
+        padding: 2rem 1rem;
+    }
+    .Card-content-container:nth-child(2) {
+        justify-self: end;
+    }
+    .Card-content-container--header {
+        text-align: center;
+    }
+}
