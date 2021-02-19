@@ -1,5 +1,7 @@
 .Accordion {
     border-bottom: 1px solid lightgray;
+    max-width: 35rem;
+    box-sizing: border-box;
 }
 
 .Accordion-header {
@@ -10,7 +12,7 @@
 }
 
 .Accordion-header--text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: gray;
     font-weight: lighter;
 }
