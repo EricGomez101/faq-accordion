@@ -1,0 +1,7 @@
+@media (max-width: 920px) {
+  .Accordion-container {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+}

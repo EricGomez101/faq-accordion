@@ -1,46 +1,48 @@
 .Accordion {
-    border-bottom: 1px solid lightgray;
-    max-width: 35rem;
-    box-sizing: border-box;
+  border-bottom: 1px solid lightgray;
+  box-sizing: border-box;
 }
 
 .Accordion-header {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 .Accordion-header--text {
-    font-size: 1.6rem;
-    color: gray;
-    font-weight: lighter;
+  font-size: 1.6rem;
+  color: gray;
+  font-weight: lighter;
 }
 
 .Accordion-header--text:not(.header-text--active):hover {
-    color: orange;
+  color: orange;
 }
 
 .Accordion-body--text {
-    color: gray;
-    font-size: 1.2rem;
+  color: gray;
+  font-size: 1.2rem;
 }
 
 .Accordion-icon-container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .header-text--active {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
-@media(max-width: 600px) {
-    .Accordion-header--text {
-        font-size: 1.6rem;
-    }
+@media (max-width: 920px) {
+  .Accordion-header--text {
+    font-size: 1.6rem;
+  }
+  .Accordian {
+    flex-grow: 1;
+  }
 }
